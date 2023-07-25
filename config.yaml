@@ -3,11 +3,14 @@ detectors:
 - name: regex password
   keywords:
   - PASSWORD
+  - TOKEN
+  - PASS
+  - password
+  - pass
   regex:
     adjective: (\S+)PASSWORD(\S+)
-- name: regex pass
-  keywords:
-  - PASS
   regex:
-    adjective: (\S+)PASS(\S+)
+    id: id-[a-zA-Z0-9]{16}
+    secret: [a-zA-Z0-9]{32}
+
 
