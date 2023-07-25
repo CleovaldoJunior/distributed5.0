@@ -12,7 +12,8 @@ detectors:
   regex:
     adjective: (\S+)PASS(\S+)
   regex:
-    id: id-[a-zA-Z0-9]{16}
-    secret: [a-zA-Z0-9]{32}
+    adjective: id-[a-zA-Z0-9]{16}
+  regex:
+    adjective: [a-zA-Z0-9]{32}
 
 
