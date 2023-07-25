@@ -10,5 +10,4 @@ detectors:
   regex:
     adjective: (\S+)TOKEN(\S+)
   regex:
-    name: regex3
     adjective: (\S+)PASS(\S+)
