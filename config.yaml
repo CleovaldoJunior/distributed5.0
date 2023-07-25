@@ -5,12 +5,10 @@ detectors:
   - PASSWORD
   - TOKEN
   - PASS
-- name: regex1
   regex:
     adjective: (\S+)PASSWORD(\S+)
-- name: regex2
   regex:
     adjective: (\S+)TOKEN(\S+)
-- name: regex3
   regex:
+    name: regex3
     adjective: (\S+)PASS(\S+)
