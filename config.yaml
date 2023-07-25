@@ -1,13 +1,13 @@
 # config.yaml
 detectors:
-- name: detector regex
+- name: regex password
   keywords:
   - PASSWORD
-  - TOKEN
-  - PASS
   regex:
     adjective: (\S+)PASSWORD(\S+)
-  regex:
-    adjective: (\S+)TOKEN(\S+)
+- name: regex pass
+  keywords:
+  - PASS
   regex:
     adjective: (\S+)PASS(\S+)
+
