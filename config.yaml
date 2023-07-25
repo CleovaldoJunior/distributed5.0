@@ -1,10 +1,18 @@
+# config.yaml
 detectors:
- keywords:
-  - pass
-  - key
-  name: custom regex detector
+- name: detector regex
+  keywords:
+  - PASSWORD
+  - TOKEN
+  - PASS
   regex:
-    id: 'id-[a-zA-Z0-9]{16}'
-    secret: '[a-zA-Z0-9]{32}'
+    adjective: (\S+)PASSWORD(\S+)
+  regex:
+    adjective: (\S+)TOKEN(\S+)
+  regex:
+    adjective: (\S+)PASS(\S+)
+  regex:
+    id: id-[a-zA-Z0-9]{16}
+    secret: [a-zA-Z0-9]{32}
 
 
