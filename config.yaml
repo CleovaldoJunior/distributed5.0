@@ -4,7 +4,7 @@ detectors:
   - key
   name: custom regex detector
   regex:
-    id: id-[a-zA-Z0-9]{16}
+    id: 'id-[a-zA-Z0-9]{16}'
     secret: '[a-zA-Z0-9]{32}'
 
 
