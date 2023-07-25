@@ -1,23 +1,21 @@
 detectors:
   - name:  PASSWORD
-  keywords:
-    - PASSWORD
-  regex:
-    adjective: '(\S+)PASSWORD(\S+)'
-  regex:
-    adjective: '(\S+)TOKEN(\S+)'
+    keywords:
+      - PASSWORD
+    regex:
+      adjective: '(\S+)PASSWORD(\S+)'
 
   - name: TOKEN
-  keywords:
-    - TOKEN
-  regex:
-    adjective: '(\S+)TOKEN(\S+)'
+    keywords:
+      - TOKEN
+    regex:
+      adjective: '(\S+)TOKEN(\S+)'
 
   - name: PASS
-  keywords:
-    - PASS
-  regex:
-    adjective: '(\S+)PASS(\S+)'
+    keywords:
+      - PASS
+    regex:
+      adjective: '(\S+)PASS(\S+)'
       
   - name: AWS API Gateway
   keywords:
