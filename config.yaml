@@ -1,18 +1,18 @@
 detectors:
   - name: detector regex
-  keywords:
-    - PASSWORD
-    - TOKEN
-    - PASS
-  regex:
-    adjective: (\S+)PASSWORD(\S+)
-  regex:
-    adjective: (\S+)TOKEN(\S+)
-  regex:
-    adjective: (\S+)PASS(\S+)
-  regex:
-    adjective: id-[a-zA-Z0-9]{16}
-  regex:
-    adjective: [a-zA-Z0-9]{32}
+    keywords:
+      - PASSWORD
+      - TOKEN
+      - PASS
+    regex:
+      adjective: (\S+)PASSWORD(\S+)
+    regex:
+      adjective: (\S+)TOKEN(\S+)
+    regex:
+      adjective: (\S+)PASS(\S+)
+    regex:
+      adjective: id-[a-zA-Z0-9]{16}
+    regex:
+      adjective: [a-zA-Z0-9]{32}
 
 
