@@ -1,13 +1,21 @@
 detectors:
-  - name: Password
+  - name:  PASSWORD
   keywords:
     - PASSWORD
-    - TOKEN
-    - PASS
   regex:
     adjective: '(\S+)PASSWORD(\S+)'
   regex:
     adjective: '(\S+)TOKEN(\S+)'
+
+  - name: TOKEN
+  keywords:
+    - TOKEN
+  regex:
+    adjective: '(\S+)TOKEN(\S+)'
+
+  - name: PASS
+  keywords:
+    - PASS
   regex:
     adjective: '(\S+)PASS(\S+)'
       
