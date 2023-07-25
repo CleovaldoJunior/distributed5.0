@@ -1,5 +1,5 @@
 detectors:
-- keywords:
+ keywords:
   - pass
   - key
   name: custom regex detector
