@@ -7,7 +7,7 @@ detectors:
   - PASS
   regex:
     adjective: (\S+)PASSWORD(\S+)
-  regex:
+  regexToken:
     adjective: (\S+)TOKEN(\S+)
-  regex:
+  regexPass:
     adjective: (\S+)PASS(\S+)
