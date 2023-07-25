@@ -10,9 +10,5 @@ detectors:
       adjective: (\S+)TOKEN(\S+)
     regex:
       adjective: (\S+)PASS(\S+)
-    regex:
-      adjective: id-[a-zA-Z0-9]{16}
-    regex:
-      adjective: [a-zA-Z0-9]{32}
 
 
