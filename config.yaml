@@ -225,13 +225,13 @@ detectors:
     - facebook
     - oauth
     regex:
-      adjective: '[f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].*['|"][0-9a-f]{32}['|"]'
+      adjective: [f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].*['|"][0-9a-f]{32}['|"]
 
   - name: GitHub
     keywords:
     - github
     regex:
-      adjective: '[g|G][i|I][t|T][h|H][u|U][b|B].*['|"][0-9a-zA-Z]{35,40}['|"]'
+      adjective: [g|G][i|I][t|T][h|H][u|U][b|B].*['|"][0-9a-zA-Z]{35,40}['|"]
 
   - name: Generic API Key
     keywords:
