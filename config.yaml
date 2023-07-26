@@ -155,6 +155,7 @@ detectors:
     - (dsa)
     - private
     - key
+    - DSA
     regex:
       adjective: '-----BEGIN DSA PRIVATE KEY-----'
 
@@ -164,6 +165,7 @@ detectors:
     - (ec)
     - private
     - key
+    - EC
     regex:
       adjective: '-----BEGIN EC PRIVATE KEY-----'
 
@@ -251,6 +253,7 @@ detectors:
     - google
     - api
     - key
+    - AIza
     regex:
       adjective: 'AIza[0-9A-Za-z\-_]{35}'
 
@@ -261,6 +264,8 @@ detectors:
     - platform
     - api
     - key
+    - AI
+    - za
     regex:
       adjective: 'AIza[0-9A-Za-z\-_]{35}'
 
@@ -270,6 +275,7 @@ detectors:
     - cloud
     - platform
     - oauth
+    - com
     regex:
       adjective: '[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com'
 
@@ -287,6 +293,7 @@ detectors:
     - google
     - drive
     - oauth
+    
     regex:
       adjective: '[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com'
 
@@ -295,6 +302,7 @@ detectors:
     - google
     - (gcp)
     - service-account
+    - type
     regex:
       adjective: '"type": "service_account"'
 
@@ -304,6 +312,8 @@ detectors:
     - gmail
     - api
     - key
+    - AI
+    - za
     regex:
       adjective: 'AIza[0-9A-Za-z\-_]{35}'
 
@@ -312,6 +322,7 @@ detectors:
     - google
     - gmail
     - oauth
+    - apps
     regex:
       adjective: '[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com'
 
@@ -321,6 +332,7 @@ detectors:
     - oauth
     - access
     - token
+    - ya
     regex:
       adjective: 'ya29\.[0-9A-Za-z\-_]+'
 
@@ -330,6 +342,8 @@ detectors:
     - youtube
     - api
     - key
+    - AI
+    - za
     regex:
       adjective: 'AIza[0-9A-Za-z\-_]{35}'
 
@@ -338,6 +352,8 @@ detectors:
     - google
     - youtube
     - oauth
+    - apps
+    - google
     regex:
       adjective: '[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com'
 
@@ -362,6 +378,8 @@ detectors:
     - mailchimp
     - api
     - key
+    - us
+    - br
     regex:
       adjective: '[0-9a-f]{32}-us[0-9]{1,2}'
 
@@ -378,6 +396,7 @@ detectors:
     - password
     - in
     - url
+    - http    
     regex:
       adjective: '[a-zA-Z]{3,10}://[^/\s:@]{3,20}:[^/\s:@]{3,20}@.{1,100}["'\s]'
 
@@ -387,6 +406,8 @@ detectors:
     - braintree
     - access
     - token
+    - production
+    - staging
     regex:
       adjective: 'access_token\$production\$[0-9a-z]{16}\$[0-9a-f]{32}'
 
@@ -395,6 +416,8 @@ detectors:
     - picatic
     - api
     - key
+    - sk
+    - sk_live
     regex:
       adjective: 'sk_live_[0-9a-z]{32}'
 
@@ -402,6 +425,8 @@ detectors:
     keywords:
     - slack
     - webhook
+    - services
+    - /
     regex:
       adjective: 'https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}'
 
@@ -410,6 +435,8 @@ detectors:
     - stripe
     - api
     - key
+    - rk
+    - rk_live
     regex:
       adjective: 'sk_live_[0-9a-zA-Z]{24}'
 
@@ -419,6 +446,8 @@ detectors:
     - restricted
     - api
     - key
+    - rk
+    - rk_live
     regex:
       adjective: 'rk_live_[0-9a-zA-Z]{24}'
 
@@ -427,6 +456,7 @@ detectors:
     - square
     - access
     - token
+    - sq0csp
     regex:
       adjective: 'sq0atp-[0-9A-Za-z\-_]{22}'
 
@@ -435,6 +465,7 @@ detectors:
     - square
     - oauth
     - secret
+    - sq0csp
     regex:
       adjective: 'sq0csp-[0-9A-Za-z\-_]{43}'
 
@@ -443,6 +474,7 @@ detectors:
     - twilio
     - api
     - key
+    - SK
     regex:
       adjective: 'SK[0-9a-fA-F]{32}'
 
@@ -465,6 +497,8 @@ detectors:
     keywords:
     - github
     - oauth
+    - hash
+    - id
     regex:
       adjective: '[A-Za-z0-9_]{255}'   
   
