@@ -220,33 +220,33 @@ detectors:
     regex:
       adjective: 'EAACEdEose0cBA[0-9A-Za-z]+'
 
-  - name: Facebook OAuth
-    keywords:
-    - facebook
-    - oauth
-    regex:
-      adjective: [f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].*['|"][0-9a-f]{32}['|"]
+  # - name: Facebook OAuth
+  #   keywords:
+  #   - facebook
+  #   - oauth
+  #   regex:
+  #     adjective: [f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].*['|"][0-9a-f]{32}['|"]
 
-  - name: GitHub
-    keywords:
-    - github
-    regex:
-      adjective: [g|G][i|I][t|T][h|H][u|U][b|B].*['|"][0-9a-zA-Z]{35,40}['|"]
+  # - name: GitHub
+  #   keywords:
+  #   - github
+  #   regex:
+  #     adjective: [g|G][i|I][t|T][h|H][u|U][b|B].*['|"][0-9a-zA-Z]{35,40}['|"]
 
-  - name: Generic API Key
-    keywords:
-    - generic
-    - api
-    - key
-    regex:
-      adjective: '[a|A][p|P][i|I][_]?[k|K][e|E][y|Y].*['|"][0-9a-zA-Z]{32,45}['|"]'
+  # - name: Generic API Key
+  #   keywords:
+  #   - generic
+  #   - api
+  #   - key
+  #   regex:
+  #     adjective: '[a|A][p|P][i|I][_]?[k|K][e|E][y|Y].*['|"][0-9a-zA-Z]{32,45}['|"]'
 
-  - name: Generic Secret
-    keywords:
-    - generic
-    - secret
-    regex:
-      adjective: '[s|S][e|E][c|C][r|R][e|E][t|T].*['|"][0-9a-zA-Z]{32,45}['|"]'
+  # - name: Generic Secret
+  #   keywords:
+  #   - generic
+  #   - secret
+  #   regex:
+  #     adjective: '[s|S][e|E][c|C][r|R][e|E][t|T].*['|"][0-9a-zA-Z]{32,45}['|"]'
 
   - name: Google API Key
     keywords:
