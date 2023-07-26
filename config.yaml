@@ -100,5 +100,369 @@ detectors:
     - ap-southeast-1
     regex:
       adjective: ap-southeast-1:([\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20})
+
+  - name: Slack Token
+    keywords:
+    - slack
+    - token
+    regex:
+      adjective: '(xox[p|b|o|a]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})'
+
+  - name: Generic Private Key POST Encapsulation Boundary
+    keywords:
+    - generic
+    - private
+    - key
+    - post
+    - encapsulation
+    - boundary
+    regex:
+      adjective: 'PRIVATE KEY-----'
+
+  - name: Generic Private Key Block POST Encapsulation Boundary
+    keywords:
+    - generic
+    - private
+    - key
+    - block
+    - post
+    - encapsulation
+    - boundary
+    regex:
+      adjective: 'PRIVATE KEY BLOCK-----'
+
+  - name: Private key
+    keywords:
+    - private
+    - key
+    regex:
+      adjective: '-----BEGIN PRIVATE KEY-----'
+
+  - name: RSA private key
+    keywords:
+    - rsa
+    - private
+    - key
+    regex:
+      adjective: '-----BEGIN RSA PRIVATE KEY-----'
+
+  - name: SSH (DSA) private key
+    keywords:
+    - ssh
+    - (dsa)
+    - private
+    - key
+    regex:
+      adjective: '-----BEGIN DSA PRIVATE KEY-----'
+
+  - name: SSH (EC) private key
+    keywords:
+    - ssh
+    - (ec)
+    - private
+    - key
+    regex:
+      adjective: '-----BEGIN EC PRIVATE KEY-----'
+
+  - name: PGP private key block
+    keywords:
+    - pgp
+    - private
+    - key
+    - block
+    regex:
+      adjective: '-----BEGIN PGP PRIVATE KEY BLOCK-----'
+
+  - name: Amazon AWS Access Key ID
+    keywords:
+    - amazon
+    - aws
+    - access
+    - key
+    - id
+    regex:
+      adjective: 'AKIA[0-9A-Z]{16}'
+
+  - name: Amazon MWS Auth Token
+    keywords:
+    - amazon
+    - mws
+    - auth
+    - token
+    regex:
+      adjective: 'amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+
+  - name: AWS API Key
+    keywords:
+    - aws
+    - api
+    - key
+    regex:
+      adjective: 'AKIA[0-9A-Z]{16}'
+
+  - name: Bitly Key
+    keywords:
+    - bitly
+    - key
+    regex:
+      adjective: 'R_[0-9a-f]{32}'
+
+  - name: Facebook Access Token
+    keywords:
+    - facebook
+    - access
+    - token
+    regex:
+      adjective: 'EAACEdEose0cBA[0-9A-Za-z]+'
+
+  - name: Facebook OAuth
+    keywords:
+    - facebook
+    - oauth
+    regex:
+      adjective: '[f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].*['|"][0-9a-f]{32}['|"]'
+
+  - name: GitHub
+    keywords:
+    - github
+    regex:
+      adjective: '[g|G][i|I][t|T][h|H][u|U][b|B].*['|"][0-9a-zA-Z]{35,40}['|"]'
+
+  - name: Generic API Key
+    keywords:
+    - generic
+    - api
+    - key
+    regex:
+      adjective: '[a|A][p|P][i|I][_]?[k|K][e|E][y|Y].*['|"][0-9a-zA-Z]{32,45}['|"]'
+
+  - name: Generic Secret
+    keywords:
+    - generic
+    - secret
+    regex:
+      adjective: '[s|S][e|E][c|C][r|R][e|E][t|T].*['|"][0-9a-zA-Z]{32,45}['|"]'
+
+  - name: Google API Key
+    keywords:
+    - google
+    - api
+    - key
+    regex:
+      adjective: 'AIza[0-9A-Za-z\-_]{35}'
+
+  - name: Google Cloud Platform API Key
+    keywords:
+    - google
+    - cloud
+    - platform
+    - api
+    - key
+    regex:
+      adjective: 'AIza[0-9A-Za-z\-_]{35}'
+
+  - name: Google Cloud Platform OAuth
+    keywords:
+    - google
+    - cloud
+    - platform
+    - oauth
+    regex:
+      adjective: '[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com'
+
+  - name: Google Drive API Key
+    keywords:
+    - google
+    - drive
+    - api
+    - key
+    regex:
+      adjective: 'AIza[0-9A-Za-z\-_]{35}'
+
+  - name: Google Drive OAuth
+    keywords:
+    - google
+    - drive
+    - oauth
+    regex:
+      adjective: '[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com'
+
+  - name: Google (GCP) Service-account
+    keywords:
+    - google
+    - (gcp)
+    - service-account
+    regex:
+      adjective: '"type": "service_account"'
+
+  - name: Google Gmail API Key
+    keywords:
+    - google
+    - gmail
+    - api
+    - key
+    regex:
+      adjective: 'AIza[0-9A-Za-z\-_]{35}'
+
+  - name: Google Gmail OAuth
+    keywords:
+    - google
+    - gmail
+    - oauth
+    regex:
+      adjective: '[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com'
+
+  - name: Google OAuth Access Token
+    keywords:
+    - google
+    - oauth
+    - access
+    - token
+    regex:
+      adjective: 'ya29\.[0-9A-Za-z\-_]+'
+
+  - name: Google YouTube API Key
+    keywords:
+    - google
+    - youtube
+    - api
+    - key
+    regex:
+      adjective: 'AIza[0-9A-Za-z\-_]{35}'
+
+  - name: Google YouTube OAuth
+    keywords:
+    - google
+    - youtube
+    - oauth
+    regex:
+      adjective: '[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com'
+
+  - name: Heroku API Key
+    keywords:
+    - heroku
+    - api
+    - key
+    regex:
+      adjective: '[h|H][e|E][r|R][o|O][k|K][u|U].*[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}'
+
+  - name: LinkedIn API Key
+    keywords:
+    - linkedin
+    - api
+    - key
+    regex:
+      adjective: '[l|L][i|I][n|N][k|K][e|E][d|D][i|I][n|N].*['|"][0-9a-zA-Z]{16}['|"]'
+
+  - name: MailChimp API Key
+    keywords:
+    - mailchimp
+    - api
+    - key
+    regex:
+      adjective: '[0-9a-f]{32}-us[0-9]{1,2}'
+
+  - name: Mailgun API Key
+    keywords:
+    - mailgun
+    - api
+    - key
+    regex:
+      adjective: 'key-[0-9a-zA-Z]{32}'
+
+  - name: Password in URL
+    keywords:
+    - password
+    - in
+    - url
+    regex:
+      adjective: '[a-zA-Z]{3,10}://[^/\s:@]{3,20}:[^/\s:@]{3,20}@.{1,100}["'\s]'
+
+  - name: PayPal Braintree Access Token
+    keywords:
+    - paypal
+    - braintree
+    - access
+    - token
+    regex:
+      adjective: 'access_token\$production\$[0-9a-z]{16}\$[0-9a-f]{32}'
+
+  - name: Picatic API Key
+    keywords:
+    - picatic
+    - api
+    - key
+    regex:
+      adjective: 'sk_live_[0-9a-z]{32}'
+
+  - name: Slack Webhook
+    keywords:
+    - slack
+    - webhook
+    regex:
+      adjective: 'https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}'
+
+  - name: Stripe API Key
+    keywords:
+    - stripe
+    - api
+    - key
+    regex:
+      adjective: 'sk_live_[0-9a-zA-Z]{24}'
+
+  - name: Stripe Restricted API Key
+    keywords:
+    - stripe
+    - restricted
+    - api
+    - key
+    regex:
+      adjective: 'rk_live_[0-9a-zA-Z]{24}'
+
+  - name: Square Access Token
+    keywords:
+    - square
+    - access
+    - token
+    regex:
+      adjective: 'sq0atp-[0-9A-Za-z\-_]{22}'
+
+  - name: Square OAuth Secret
+    keywords:
+    - square
+    - oauth
+    - secret
+    regex:
+      adjective: 'sq0csp-[0-9A-Za-z\-_]{43}'
+
+  - name: Twilio API Key
+    keywords:
+    - twilio
+    - api
+    - key
+    regex:
+      adjective: 'SK[0-9a-fA-F]{32}'
+
+  - name: Twitter Access Token
+    keywords:
+    - twitter
+    - access
+    - token
+    regex:
+      adjective: '[t|T][w|W][i|I][t|T][t|T][e|E][r|R].*[1-9][0-9]+-[0-9a-zA-Z]{40}'
+
+  - name: Twitter OAuth
+    keywords:
+    - twitter
+    - oauth
+    regex:
+      adjective: '[t|T][w|W][i|I][t|T][t|T][e|E][r|R].*['|"][0-9a-zA-Z]{35,44}['|"]'
+
+  - name: Github OAuth
+    keywords:
+    - github
+    - oauth
+    regex:
+      adjective: '[A-Za-z0-9_]{255}'   
   
   
