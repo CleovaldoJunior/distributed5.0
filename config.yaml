@@ -20,126 +20,126 @@ detectors:
     regex:
       adjective: '(\S+)(?i)PASS(\S+)'
       
-  - name: AWS API Gateway
-    keywords:
-    - amazonaws
-    regex:
-      adjective: '[0-9a-z]{3,100}.execute-api.[0-9a-z.-_]+.amazonaws.com'
+  # - name: AWS API Gateway
+  #   keywords:
+  #   - amazonaws
+  #   regex:
+  #     adjective: '[0-9a-z]{3,100}.execute-api.[0-9a-z.-_]+.amazonaws.com'
 
-  - name: AWS ARN
-    keywords:
-    - aws
-    regex:
-      adjective: 'arn:aws:[a-z0-9-]+:[a-z]{2}-[a-z]+-[0-9]+:[0-9]+:.+'
+  # - name: AWS ARN
+  #   keywords:
+  #   - aws
+  #   regex:
+  #     adjective: 'arn:aws:[a-z0-9-]+:[a-z]{2}-[a-z]+-[0-9]+:[0-9]+:.+'
   
-  - name: AWS AppSync GraphQL Key
-    keywords:
-    - da2-
-    regex:
-      adjective: 'da2-[a-z0-9]{26}'
+  # - name: AWS AppSync GraphQL Key
+  #   keywords:
+  #   - da2-
+  #   regex:
+  #     adjective: 'da2-[a-z0-9]{26}'
   
-  - name: AWS CloudFront
-    keywords:
-    - cloudfront
-    regex:
-      adjective: '[0-9a-z.-_]+.cloudfront.net'
+  # - name: AWS CloudFront
+  #   keywords:
+  #   - cloudfront
+  #   regex:
+  #     adjective: '[0-9a-z.-_]+.cloudfront.net'
   
-  - name: AWS Identity Pool
-    keywords:
-    - ap-southeast-1
-    regex:
-      adjective: ap-southeast-1:([\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20})'
+  # - name: AWS Identity Pool
+  #   keywords:
+  #   - ap-southeast-1
+  #   regex:
+  #     adjective: ap-southeast-1:([\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20})'
   
-  - name: AWS EC2 External
-    keywords:
-    - compute
-    regex:
-      adjective: 'ec2-[0-9a-z.-_]+.compute(-1)?.amazonaws.com'
+  # - name: AWS EC2 External
+  #   keywords:
+  #   - compute
+  #   regex:
+  #     adjective: 'ec2-[0-9a-z.-_]+.compute(-1)?.amazonaws.com'
   
-  - name: AWS EC2 Internal
-    keywords:
-    - internal
-    regex:
-      adjective: '[0-9a-z.-_]+.compute(-1)?.internal'
+  # - name: AWS EC2 Internal
+  #   keywords:
+  #   - internal
+  #   regex:
+  #     adjective: '[0-9a-z.-_]+.compute(-1)?.internal'
   
-  - name: AWS ELB
-    keywords:
-    - elb
-    regex:
-      adjective: '[0-9a-z.-_]+.elb.amazonaws.com'
+  # - name: AWS ELB
+  #   keywords:
+  #   - elb
+  #   regex:
+  #     adjective: '[0-9a-z.-_]+.elb.amazonaws.com'
   
-  - name: AWS ElasticCache
-    keywords:
-    - cache
-    regex:
-      adjective: '[0-9a-z.-_]+.cache.amazonaws.com'
+  # - name: AWS ElasticCache
+  #   keywords:
+  #   - cache
+  #   regex:
+  #     adjective: '[0-9a-z.-_]+.cache.amazonaws.com'
   
-  - name: AWS MWS ID
-    keywords:
-    - mws
-    regex:
-      adjective: 'mzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+  # - name: AWS MWS ID
+  #   keywords:
+  #   - mws
+  #   regex:
+  #     adjective: 'mzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
   
-  - name: AWS MWS key
-    keywords:
-    - mws
-    regex:
-      adjective: 'amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+  # - name: AWS MWS key
+  #   keywords:
+  #   - mws
+  #   regex:
+  #     adjective: 'amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
   
-  - name: AWS S3 Bucket
-    keywords:
-    - s3
-    regex:
-      adjective: 's3://[0-9a-z.-_/]+'
+  # - name: AWS S3 Bucket
+  #   keywords:
+  #   - s3
+  #   regex:
+  #     adjective: 's3://[0-9a-z.-_/]+'
   
-  - name: AWS S3 Endpoint
-    keywords:
-    - s3
-    regex:
-      adjective: '[a-zA-Z0-9.-_]{3,100}.s3.[a-zA-Z0-9.-_]+.amazonaws.com'
+  # - name: AWS S3 Endpoint
+  #   keywords:
+  #   - s3
+  #   regex:
+  #     adjective: '[a-zA-Z0-9.-_]{3,100}.s3.[a-zA-Z0-9.-_]+.amazonaws.com'
   
-  - name: AWS Identity Pool
-    keywords:
-    - ap-southeast-1
-    regex:
-      adjective: ap-southeast-1:([\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20})
+  # - name: AWS Identity Pool
+  #   keywords:
+  #   - ap-southeast-1
+  #   regex:
+  #     adjective: ap-southeast-1:([\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20}-[\d\w]{3,20})
 
-  - name: Slack Token
-    keywords:
-    - slack
-    - token
-    regex:
-      adjective: '(xox[p|b|o|a]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})'
+  # - name: Slack Token
+  #   keywords:
+  #   - slack
+  #   - token
+  #   regex:
+  #     adjective: '(xox[p|b|o|a]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})'
 
-  - name: Generic Private Key POST Encapsulation Boundary
-    keywords:
-    - generic
-    - private
-    - key
-    - post
-    - encapsulation
-    - boundary
-    regex:
-      adjective: 'PRIVATE KEY-----'
+  # - name: Generic Private Key POST Encapsulation Boundary
+  #   keywords:
+  #   - generic
+  #   - private
+  #   - key
+  #   - post
+  #   - encapsulation
+  #   - boundary
+  #   regex:
+  #     adjective: 'PRIVATE KEY-----'
 
-  - name: Generic Private Key Block POST Encapsulation Boundary
-    keywords:
-    - generic
-    - private
-    - key
-    - block
-    - post
-    - encapsulation
-    - boundary
-    regex:
-      adjective: 'PRIVATE KEY BLOCK-----'
+  # - name: Generic Private Key Block POST Encapsulation Boundary
+  #   keywords:
+  #   - generic
+  #   - private
+  #   - key
+  #   - block
+  #   - post
+  #   - encapsulation
+  #   - boundary
+  #   regex:
+  #     adjective: 'PRIVATE KEY BLOCK-----'
 
-  - name: Private key
-    keywords:
-    - private
-    - key
-    regex:
-      adjective: '-----BEGIN PRIVATE KEY-----'
+  # - name: Private key
+  #   keywords:
+  #   - private
+  #   - key
+  #   regex:
+  #     adjective: '-----BEGIN PRIVATE KEY-----'
 
   # - name: RSA private key
   #   keywords:
